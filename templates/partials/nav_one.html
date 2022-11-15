@@ -1,0 +1,132 @@
+{% load static %}
+
+<header id="header" class="site-header site-header--landing">
+		
+    <!-- Main Navigation Left -->
+    <nav class="main-nav">
+        <ul class="main-nav__list">
+            <li class=""><a href="home.html">Home</a></li>
+            <li class="">
+                <a href="#">Teams</a>
+                <ul class="main-nav__sub">
+                    <li class="">
+                        <a href="#">Team Selections</a>
+                        <ul class="main-nav__sub">
+                            <li class=""><a href="team-selection-1.html">Team Selection v1</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="team-overview.html">Team Overview</a>
+                        <ul class="main-nav__sub">
+                            <li class=""><a href="team-overview.html">Team Overview v1</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="staff-member.html">Staff Member<span class="badge badge-danger">New</span></a></li>
+                </ul>
+            </li>
+            <li class=""><a href="#">Matches</a>
+                <ul class="main-nav__sub">
+                    <li class=""><a href="matches-scores.html">Match Scores</a></li>
+                        <ul class="main-nav__sub">
+                            <li class=""><a href="matches-stats-1.html">Match Stats v1</a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#">Match Lineups</a>
+                        <ul class="main-nav__sub">
+                            <li class=""><a href="matches-lineups-1.html">Match Lineups v1</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="#">Match Overviews</a>
+                        <ul class="main-nav__sub">
+                            <li class=""><a href="matches-overview-1.html">Match Overview v1</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="matches-replay.html">Match Replay</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Main Navigation Left / End -->
+
+    <!-- Logo - Image Based -->
+    <div class="header-logo header-logo--img">
+        <a href="{% url 'index' %}"><img src="{% static 'assets/img/logo.png' %}" srcset="{% static 'assets/img/logo@2x.png' %} 2x" alt="Necromancers"></a>
+    </div>
+    <!-- Logo - Image Based / End -->
+
+    <!-- Main Navigation Right -->
+    <nav class="main-nav">
+        <ul class="main-nav__list">
+            <li class=""><a href="#">News</a>
+                <ul class="main-nav__sub">
+                    <li class=""><a href="blog-1.html">News v1</a></li>
+                </ul>
+            </li>
+            <li class=" has-child"><a href="#">Features</a>
+                <div class="main-nav__megamenu">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h6 class="main-nav__title">Main Pages</h6>
+                            <div class="row">
+                                <ul class="col-md-4">
+                                    <li class=""><a href="index.html">Landing Image</a></li>
+                                    <li class="active"><a href="index-2.html">Landing Video</a></li>
+                                 
+                                </ul>
+                                <ul class="col-md-4">
+                                    <li class=""><a href="shop-account-settings.html">Account Settings</a></li>
+                                    
+                                </ul>
+                                <ul class="col-md-4">
+                                    <li class=""><a href="streams-archive.html">Streams Page</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <h6 class="col-md-8 main-nav__title">Team Pages</h6>
+                            </div>
+                            <div class="row">
+                                <ul class="col-md-4">
+                                    <li class=""><a href="team-selection-1.html">Team Selection v1</a></li>
+                                   
+                                </ul>
+                                <ul class="col-md-4">
+                                    <li><a href="team-overview.html?slide=1">Team Statistics</a></li>
+                                </ul>
+                                <ul class="col-md-4">
+                                    <li><a href="team-player-1.html">Player Overview</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <h6 class="col-md-8 main-nav__title">Match Pages</h6>
+                            </div>
+                            <div class="row">
+                                <ul class="col-md-4">
+                                    <li class=""><a href="matches-scores.html">Match Scores</a></li>
+                                </ul>
+                                <ul class="col-md-4">
+                                    <li class=""><a href="matches-stats-2.html">Match Stats v2</a></li>
+                                </ul>
+                                <ul class="col-md-4">
+                                    <li class=""><a href="shop.html">Shop Page v1</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="">
+                <a href="#">Shop</a>
+                <ul class="main-nav__sub">
+                    <li class=""><a href="shop.html">Shop Page v1</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Main Navigation Right / End -->
+</header>

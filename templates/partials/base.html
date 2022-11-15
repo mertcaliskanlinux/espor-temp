@@ -1,0 +1,104 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<title>Payyung &amp; Gaming</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Payyung Team &amp; Gaming">
+	<meta name="author" content="Mert Caliskan">
+	<meta name="keywords" content="Mert Caliskan">
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="{% static 'assets/img/favicons/favicon.ico' %}">
+	<link rel="apple-touch-icon" sizes="120x120" href="{% static 'assets/img/favicons/favicon-120.png' %}">
+	<link rel="apple-touch-icon" sizes="152x152" href="{% static 'assets/img/favicons/favicon-152.png' %}">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<!-- Google Web Fonts
+	================================================== -->
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700" rel="stylesheet">
+
+	<!-- CSS
+	================================================== -->
+	<!-- Vendor CSS -->
+	<link href="{% static 'assets/vendor/magnific-popup/css/magnific-popup.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendor/slick/css/slick.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendor/nanoscroller/css/nanoscroller.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendor/fontawesome/css/brands.css' %}" rel="stylesheet">
+
+	<!-- Template CSS -->
+	<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="{% static 'assets/css/custom.css' %}" rel="stylesheet">
+
+</head>
+
+<body class="site-layout--landing preloader-is--active preloader--no-transform">
+
+	<div class="site-wrapper">
+        {% include 'partials/nav_one.html' %}
+
+
+
+        {% block content %}
+        
+
+        
+        {% endblock content %}
+
+
+        {% include 'partials/footer_one.html' %}
+
+
+    </div>
+
+
+
+
+
+    
+
+	<!-- Javascript Files
+	================================================== -->
+	<!-- Core JS -->
+	<script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+	<script src="{% static 'assets/vendor/jquery/jquery-migrate.min.js' %}"></script>
+	<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+	<script src="{% static 'assets/js/core.js' %}"></script>
+	
+	<!-- Vendor JS -->
+	
+	<!-- Template JS -->
+	<script src="{% static 'assets/js/init.js' %}"></script>
+	<script src="{% static 'assets/js/custom.js' %}"></script>
+	
+	<!-- Duotone SVG color filter -->
+	<svg xmlns="http://www.w3.org/2000/svg" class="svg-filters">
+		<filter id="duotone_base">
+			<feColorMatrix type="matrix" result="grayscale"
+				values="1 0 0 0 0
+								1 0 0 0 0
+								1 0 0 0 0
+								0 0 0 1 0" />
+			<feComponentTransfer color-interpolation-filters="sRGB" result="duotone_base_filter">
+				<feFuncR type="table" tableValues="0.082352941176471 0.419607843137255"></feFuncR>
+				<feFuncG type="table" tableValues="0.090196078431373 0.443137254901961"></feFuncG>
+				<feFuncB type="table" tableValues="0.125490196078431 0.6"></feFuncB>
+				<feFuncA type="table" tableValues="0 1"></feFuncA>
+			</feComponentTransfer>
+		</filter>
+	</svg>
+
+</body>
+
+</html>
