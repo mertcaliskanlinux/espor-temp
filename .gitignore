@@ -1,3 +1,5 @@
 .env
 /htt
 /htt/*
+/core
+/core/*
